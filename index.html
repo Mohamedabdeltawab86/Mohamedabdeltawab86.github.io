@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" href = 
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" 
+        type = "image/x-icon">
     <title>Flutter Snippets</title>
 </head>
 <body>
@@ -21,6 +24,25 @@
            ),
               
               child: const Text('رمضان كريم', style: TextStyle(fontSize: 30, color: Colors.white),)),
+        ),
+     </xmp>
+     <h2>Asset Image </h2>
+    <img src="asset image.PNG" alt="Asset Image">
+    <xmp>
+        Container(
+          width: double.infinity,
+          height: double.infinity,
+          // child: Text('Image', style: TextStyle(fontSize: 100),),
+          decoration:  const BoxDecoration(
+
+            color: Colors.blue,
+            backgroundBlendMode: BlendMode.colorDodge,
+            image: DecorationImage(
+                image: AssetImage("images/quran.jpg"),
+                fit: BoxFit.cover,
+
+                ),
+          ),
         ),
      </xmp>
 </body>
